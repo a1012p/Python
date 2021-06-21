@@ -42,6 +42,20 @@ print(b)
 #6번 문제
 
 a = [1,3,4,5,2]
-a.sort()
-a.reverse()
+a.sort()    #오름차순 정렬
+a.reverse() #내림차순으로 정렬
 print(a)
+
+#7번 문제
+a = ['Life','is','too','short']
+result = " ".join(a);
+print(result)
+
+#split() 예제
+s = "Life is too short"
+a = s.split()
+print(a)
+
+s = "a:b:c:d"
+s = s.split(':')
+print(s)
