@@ -37,6 +37,26 @@ for i in range(0,5):
 
 # 4번
 
-for i in range(0,100):
-    print(i+1)
+##for i in range(0,100):
+##    print(i+1)
 
+# 5번
+A = [70,60,55,75,95,90,80,80,85,100]
+total = 0
+for score in A:
+    total += score
+average = float(total / len(A))
+print(average)
+
+# 6번
+
+numbers = [1,2,3,4,5]
+
+result =[]
+for n in numbers:
+    if n % 2 == 1:
+        result.append(n*2)
+print(result)
+#리스트 내포 [(결과값) for (임시변수) in (리스트) (조건문)]
+result2 = [n* 2 for n in numbers if n % 2 ==1]
+print(result2)
