@@ -29,3 +29,5 @@ for i in range(10):
     t.left(36)
     t.circle(50)
     
+
+t.mainloop()

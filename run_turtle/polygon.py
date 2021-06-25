@@ -3,10 +3,12 @@ import turtle as t
 #다른 곳에 도형 그리기
 t.shape('turtle')
 
+
 def polygon(n , size = 100):
     for x in range(n):
         t.forward(size)
         t.left(360/n)
+
 
 def polygon2(n,d):
     for x in range(n):
@@ -24,3 +26,6 @@ t.down() #펜 내리기
 
 polygon2(4,80)
 polygon2(5,100)
+
+
+t.mainloop()
