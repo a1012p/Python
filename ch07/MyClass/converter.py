@@ -12,7 +12,7 @@ class ScaleCoverter:
 
 
 
-
-s = ScaleCoverter("inches","mm",25.4)
-print("Converting 2 inches")
-print(str(s.convert(5)) + s.unit_to)
+if __name__ == "__main__":
+    s = ScaleCoverter("inches","mm",25.4)
+    print("Converting 2 inches")
+    print(str(s.convert(2)) + s.unit_to)

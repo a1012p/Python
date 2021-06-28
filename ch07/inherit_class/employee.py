@@ -6,10 +6,23 @@ class Employee(Person):
         super().__init__(name,age) #부모 멤버는 super()를 사용
         self.empid = empid
 
+    def getname(self):              #캡슐화(정보은닉) - get() 메서드 접근자사용
+        return self.name
+
+    def getage(self):
+        return self.age
+
+    def getempid(self):
+        return self.empid
+
 
 
 e1 = Employee("북한산",20,222)
-print(e1.name , e1.age , e1.empid)
+print("이름 : " , e1.getname())
+print("나이 : " , e1.getage())
+print("사원번호 : " , e1.getempid())
 
 e2 = Employee("금강",30,202)
-print(e2.name , e2.age , e2.empid)
+print("이름 : ",e2.getname())
+print("나이 : ",e2.getage())
+print("사원번호 : ",e2.getempid())

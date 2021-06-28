@@ -14,3 +14,6 @@ if __name__ == "__main__":
 
     e1 = Employee("남한강", 30)
     print(e1.name, e1.age)
+
+    e2 = Employee("북한강",35)
+    print(e2.name,e2.age)
