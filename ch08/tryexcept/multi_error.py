@@ -3,6 +3,7 @@ try:
     print(a[2])
     4 / 0
     f = open("write.txt",'r')
+    
 except IndexError as i:
     print(i)
 except ZeroDivisionError as z:
