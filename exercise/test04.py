@@ -39,3 +39,37 @@ print("you""need""python")
 print("you" + "need" + "python")
 print("you", "need", "python")
 print("".join(["you", "need", "python"]))
+
+# 5번 문제
+
+f1 = open("test.txt",'w')
+f1.write("Life is too short")
+f1.close()
+
+f2 = open("test.txt",'r')
+print(f2.read())
+f2.close()
+'''
+# 6번 문제
+user_input = input("저장할 내용을 입력하세요:")
+f = open('test.txt','a')
+f.write(user_input)
+f.write('\n')
+f.close()
+'''
+# 7번 문제
+f = open('test2.txt','w')
+f.write("Life is too short\nyou need java")
+f.close()
+
+f = open('test2.txt','r')
+body = f.read()
+f.close()
+
+print(body)
+body = body.replace("java","python",1)
+print(body)
+
+f = open('test2.txt','w')
+f.write(body)
+f.close()

@@ -1,7 +1,7 @@
 import random
 
 f = open("c:/pyfile/2021kbo.txt",'w')
-team = ['기아','삼성','한화','LG','NC','키움','KT','SSG']
+team = ['기아','삼성','한화','LG','NC','키움','KT','SSG','롯데']
 for i in team:
     f.write(i + " ")
     '''
