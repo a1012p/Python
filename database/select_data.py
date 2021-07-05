@@ -6,7 +6,7 @@ def select_data():
     conn = g()
     cur =conn.cursor()
     #자료 조회 SQL언어 DML
-    sql ="select * from member"
+    sql ="select * from employee"
 
     cur.execute(sql)
     rs = cur.fetchall() # 꺼내온 자료객체

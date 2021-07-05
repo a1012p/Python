@@ -1,6 +1,7 @@
 # raise -> 에러를 미뤄둔다. 사용하는 쪽에서 발생하도록 함
 class Bird:
     def fly(self):
+        print("새가 날아갑니다.")
         raise NotImplementedError
 
 class Eagle(Bird):
@@ -8,6 +9,8 @@ class Eagle(Bird):
     def fly(self):
         print("독수리가 날아 오릅니다")
 
+# bird = Bird()
+# bird.fly()
 eagle = Eagle()
 eagle.fly()
 

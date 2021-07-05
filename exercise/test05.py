@@ -1,5 +1,5 @@
 import sys
-
+import time
 #1번 문제
 
 class Calculator:
@@ -80,20 +80,76 @@ print(li)
 
 # 7번 문제
 
-li = [-8,2,7,-3,5,0,-1]
-result = max(li) + min(li)
+def find_max(li):
+    max = li[0]
+    '''
+    for i in range(len(li)):
+        if li[i] > max:
+            max = li[i]
+    return max
+    '''
+    for i in li:
+        if i > max:
+            max = i
+    return max
+
+
+def find_min(li):
+    min = li[0]
+    for i in range(len(li)):
+        if li[i] < min:
+            min = li[i]
+    return min
+
+d1 = [-8,2,7,-3,5,0,-1]
+result = max(d1) + min(d1)
 print(result)
 
-li.sort()
-result = li[0] + li[-1]
+d1.sort()
+result = d1[0] + d1[-1]
 print(result)
 
+max2 = find_max(d1)
+min2 = find_min(d1)
+print(max2 + min2)
 # 8번 문제
 
 print("%.4f" % (17 /3.0))
 
-# 9번 문제
+# # 9번 문제
+#
+# args = sys.argv[1:]
+# list="+".join(args)
+# print(eval(list))
 
-args = sys.argv[1:]
-list="+".join(args)
-print(eval(list))
+# 12번 문제
+
+print(time.strftime("%Y/%m/%d %H:%M:%S"))
+
+import datetime
+now = datetime.datetime.now()
+print(now)
+print(now.strftime("%Y/%m/%d %H:%M:%S"))
+
+# 13번 문제
+import random
+
+#주사위 10번 던지기
+
+dice = []
+for i in range(10):
+    n = random.randint(1,6)
+    dice.append(n)
+
+print(dice)
+
+#로또 복권 생성기
+
+lotto = []
+while len(lotto) < 6:
+    Rn = random.randint(1,45)
+    print(Rn)
+    if Rn not in lotto:     #중복 숫자 방지
+        lotto.append(Rn)
+
+print(lotto)

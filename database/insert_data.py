@@ -1,4 +1,5 @@
 # 자료를 삽입하는 코드
+import sqlite3
 
 from lib.db.dbconn import getconn as g
 
@@ -13,11 +14,11 @@ def insert_data(number, name, age):
     #     insert into member values ('최영',60),
     #     insert into member values ('이순신',50)
     # """
-
     cur.execute(sql)
 
     conn.commit()
     conn.close()
 
 if __name__ == "__main__":
-    insert_data(100,'최영',45)
+    insert_data(101,'최영',45)
+    insert_data(102,'최영',45)
