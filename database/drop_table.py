@@ -1,12 +1,10 @@
-# 자료를 삭제하는 코드
-
 from lib.db.dbconn import getconn as g
 
-def delete_data():
+def drop_table():
     conn = g()
     cur = conn.cursor()
-    #자료를 수정 - SQL언어 DML
-    sql = "delete from member where mem_num=103"
+    # DDL - 테이블 삭제 언어
+    sql = "drop table member"
 
     cur.execute(sql)
 
@@ -14,4 +12,4 @@ def delete_data():
     conn.close()
 
 if __name__ == "__main__":
-    delete_data()
+    drop_table()

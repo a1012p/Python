@@ -6,7 +6,7 @@ def select_one():
     conn = g()
     cur =conn.cursor()
     #자료 조회 SQL언어 DML
-    sql ="select * from member where name='황진이'"
+    sql ="select * from member where mem_num='102'"
 
     cur.execute(sql)
     rs = cur.fetchone() # 꺼내온 자료객체

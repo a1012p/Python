@@ -10,6 +10,7 @@ def create_table():
     #테이블 생성 - DDL 언어
     sql = """
         create table member(
+            mem_num int primary key, 
             name char(20),
             age int
         )

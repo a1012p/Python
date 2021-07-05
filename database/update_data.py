@@ -6,7 +6,7 @@ def update_data():
     conn = g()
     cur = conn.cursor()
     #자료를 수정 - SQL언어 DML
-    sql = "update member set age=35 where name='심청이'"
+    sql = "update member set name='이몽룡' where mem_num = 103"
 
     cur.execute(sql)
 
