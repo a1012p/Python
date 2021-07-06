@@ -59,7 +59,7 @@ def delete_emp():
 
     try:
         #사원번호가 'e102'삭제
-        cur.execute("delete from employee where emp_id=?",('e102',))
+        cur.execute("delete from employee where emp_id=?",('e102',)) #1개 매핑인 경우(튜플 자료구조를 구분하기위한 ,필요)
     except sqlite3.IntegrityError as IGE:
         print(IGE)
 

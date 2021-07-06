@@ -11,7 +11,7 @@ print(m.span())
 
 #search
 
-p2 = re.compile('\d+\s[a-z]+')
+p2 = re.compile('\w+')   # [0-9A-Za-z]+
 m2 = p2.search("2021 incheon")
 print(m2)
 print(m2.group())
